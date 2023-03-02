@@ -9,6 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     
+    init() {
+            //Use this if NavigationBarTitle is with Large Font
+            UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor(Color("ambersae"))]
+
+            //Use this if NavigationBarTitle is with displayMode = .inline
+            UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(Color("ambersae"))]
+        }
     
     var body: some View {
         TabView {
@@ -18,7 +25,10 @@ struct ContentView: View {
             PlanningView()
             PrestatairesView()
         }
-
+        .foregroundColor(Color("ambersae"))
+        .accentColor(Color("ambersae"))
+        .toolbarColorScheme(.dark, for: .tabBar)
+        .colorScheme(.dark)
     }
 }
 

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PrestatairesView: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Text("Prestataires")
                 .navigationTitle("Liste des prestataires")
         }

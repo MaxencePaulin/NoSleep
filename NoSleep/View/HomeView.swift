@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct HomeView: View {
-    var body: some View {
-        NavigationView {
-            Text("Home")
-                .navigationTitle("No Sleep")
+    var body: some View {	
+        NavigationStack {
+            List {
+                Text("Home")
+                    .frame(height: 500)
+                    .navigationTitle("No Sleep")
+            }            
         }
         .tabItem {
             Image(systemName: "house")
