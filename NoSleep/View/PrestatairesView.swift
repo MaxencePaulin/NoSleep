@@ -8,10 +8,17 @@
 import SwiftUI
 
 struct PrestatairesView: View {
+    
+    @EnvironmentObject var data: ArtistViewModel
+    
     var body: some View {
         NavigationStack {
-            RowPrestataireView()
-                .navigationTitle("Liste des prestataires")
+            List {
+                ForEach(data.artists) { artist in
+                    RowPrestataireView(artist: artist)
+                }
+            }
+            .navigationTitle("Liste des prestataires")
         }
             .tabItem {
                 Image(systemName: "shippingbox")
@@ -23,5 +30,6 @@ struct PrestatairesView: View {
 struct PrestatairesView_Previews: PreviewProvider {
     static var previews: some View {
         PrestatairesView()
+            .environmentObject(ArtistViewModel())
     }
 }

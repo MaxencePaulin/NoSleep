@@ -12,6 +12,7 @@ struct NoSleepApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ArtistViewModel())
         }
     }
 }

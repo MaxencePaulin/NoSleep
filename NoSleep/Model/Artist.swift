@@ -8,17 +8,22 @@
 import Foundation
 
 struct Artist : Identifiable{
-    var id : Int
+    var id = UUID()
     var photo : String
-    var name : String
-    var prename : String
+    var firstname : String
+    var lastname : String
     var info : String
     var style : String
     var age : Int
     
     
-    static var dataArtist = [
-    Artist(id: 1 ,  photo: "PATH/photo" , name: "Hallyday" , prename:  "Jonny" , info: "chanteur qui chante " , style: "rock" , age: 90 )
-    
+    static var artists = [
+        Artist(photo: "PATH/photo" , firstname:  "Jonny" , lastname: "Hallyday" ,  info: "chanteur qui chante " , style: "rock" , age: 90 ),
+        Artist(photo: "PATH/photo" , firstname:  "Jonny2" , lastname: "Hallyday2" ,  info: "chanteur qui chante " , style: "rock" , age: 90 ),
+        Artist(photo: "PATH/photo" , firstname:  "Jonny3" , lastname: "Hallyday3" ,  info: "chanteur qui chante " , style: "rock" , age: 90 ),
+        Artist(photo: "PATH/photo" , firstname:  "Jonny4" , lastname: "Hallyday4" ,  info: "chanteur qui chante " , style: "rock" , age: 90 ),
+        Artist(photo: "PATH/photo" , firstname:  "Jonny5" , lastname: "Hallyday5" ,  info: "chanteur qui chante " , style: "rock" , age: 90 ),
+        Artist(photo: "PATH/photo" , firstname:  "Jonny6" , lastname: "Hallyday6" ,  info: "chanteur qui chante " , style: "rock" , age: 90 )
+        
     ]
 }

@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct RowPrestataireView: View {
+    
+    var artist: Artist
+    
     var body: some View {
         HStack {
-            Text("Prestataire Name")
+            Text(artist.firstname)
         }
         .padding()
         .overlay {
@@ -21,6 +24,6 @@ struct RowPrestataireView: View {
 
 struct RowPrestataireView_Previews: PreviewProvider {
     static var previews: some View {
-        RowPrestataireView()
+        RowPrestataireView(artist: Artist.artists[0])
     }
 }
