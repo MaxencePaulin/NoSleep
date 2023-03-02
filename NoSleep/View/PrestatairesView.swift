@@ -10,7 +10,7 @@ import SwiftUI
 struct PrestatairesView: View {
     var body: some View {
         NavigationStack {
-            Text("Prestataires")
+            RowPrestataireView()
                 .navigationTitle("Liste des prestataires")
         }
             .tabItem {

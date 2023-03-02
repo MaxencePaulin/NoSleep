@@ -10,11 +10,9 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {	
         NavigationStack {
-            List {
-                Text("Home")
-                    .frame(height: 500)
-                    .navigationTitle("No Sleep")
-            }            
+            //LYON 22.07.23-26.07.23
+            Text("LYON  22.07.23-26.07.23").font(.custom("Inter Bold", size: 35))
+                .navigationTitle("No Sleep")     
         }
         .tabItem {
             Image(systemName: "house")

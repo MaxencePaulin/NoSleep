@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A469D8A129B0E27600083053 /* RowPrestataireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A469D8A029B0E27600083053 /* RowPrestataireView.swift */; };
 		A4C8460229B0B94100D5CFC1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C8460129B0B94100D5CFC1 /* HomeView.swift */; };
 		A4C8460429B0BA1B00D5CFC1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C8460329B0BA1B00D5CFC1 /* MapView.swift */; };
 		A4C8460629B0BA4F00D5CFC1 /* ArtistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C8460529B0BA4F00D5CFC1 /* ArtistsView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A469D8A029B0E27600083053 /* RowPrestataireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowPrestataireView.swift; sourceTree = "<group>"; };
 		A4C8460129B0B94100D5CFC1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A4C8460329B0BA1B00D5CFC1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A4C8460529B0BA4F00D5CFC1 /* ArtistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsView.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 				A4C8460529B0BA4F00D5CFC1 /* ArtistsView.swift */,
 				A4C8460729B0BA8400D5CFC1 /* PlanningView.swift */,
 				A4C8460929B0BA9100D5CFC1 /* PrestatairesView.swift */,
+				A469D8A029B0E27600083053 /* RowPrestataireView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				A4C8460229B0B94100D5CFC1 /* HomeView.swift in Sources */,
 				A4C8460429B0BA1B00D5CFC1 /* MapView.swift in Sources */,
+				A469D8A129B0E27600083053 /* RowPrestataireView.swift in Sources */,
 				A4C8460629B0BA4F00D5CFC1 /* ArtistsView.swift in Sources */,
 				A4C8460829B0BA8400D5CFC1 /* PlanningView.swift in Sources */,
 				A4C8460A29B0BA9100D5CFC1 /* PrestatairesView.swift in Sources */,
