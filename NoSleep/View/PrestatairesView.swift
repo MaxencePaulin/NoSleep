@@ -14,9 +14,12 @@ struct PrestatairesView: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(data.artists) { artist in
-                    RowPrestataireView(artist: artist)
+                ForEach(data.artists) {
+                    RowPrestataireView(artist: $0)
                 }
+                /*équivalent à ForEach(data.artists) { artist in
+                    RowPrestataireView(artist: artist)
+                }*/
             }
             .navigationTitle("Liste des prestataires")
         }
