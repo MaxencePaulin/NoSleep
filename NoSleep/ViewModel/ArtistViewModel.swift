@@ -17,4 +17,6 @@ class ArtistViewModel: ObservableObject {
     func getArtists() {
         artists.append(contentsOf: Artist.artists)
     }
+    
+    
 }

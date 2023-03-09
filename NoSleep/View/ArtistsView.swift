@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ArtistsView: View {
+    
+    @EnvironmentObject var data: ArtistViewModel
+
     var body: some View {
         NavigationStack {
-            Text("Artists")
-                .navigationTitle("Liste des artistes")
+            List {
+                ForEach(data.artists) {
+                    RowArtistView(artist: $0)
+                }
+                /*équivalent à ForEach(data.artists) { artist in
+                    RowPrestataireView(artist: artist)
+                }*/
+            }
+            .navigationTitle("Liste des artistes")
         }
             .tabItem {
                 Image(systemName: "music.note.list")
-                Text("Artistes")
+                Text("Artiste")
             }
     }
 }

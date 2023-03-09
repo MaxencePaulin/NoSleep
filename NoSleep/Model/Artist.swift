@@ -23,7 +23,13 @@ struct Artist : Identifiable{
         Artist(photo: "PATH/photo" , firstname:  "Jonny3" , lastname: "Hallyday3" ,  info: "chanteur qui chante " , style: "rock" , age: 90 ),
         Artist(photo: "PATH/photo" , firstname:  "Jonny4" , lastname: "Hallyday4" ,  info: "chanteur qui chante " , style: "rock" , age: 90 ),
         Artist(photo: "PATH/photo" , firstname:  "Jonny5" , lastname: "Hallyday5" ,  info: "chanteur qui chante " , style: "rock" , age: 90 ),
-        Artist(photo: "PATH/photo" , firstname:  "Jonny6" , lastname: "Hallyday6" ,  info: "chanteur qui chante " , style: "rock" , age: 90 )
+        Artist(photo: "PATH/photo" , firstname:  "Jonny6" , lastname: "Hallyday6" ,  info: "chanteur qui chante " , style: "rock" , age: 90 ),
+        Artist(photo: "PATH/photo" , firstname:  "Jonny7" , lastname: "Hallyday7" ,  info: "chanteur qui chante " , style: "rock" , age: 90 ),
+        Artist(photo: "PATH/photo" , firstname:  "Jonny8" , lastname: "Hallyday8" ,  info: "chanteur qui chante " , style: "rock" , age: 90 ),
+        Artist(photo: "PATH/photo" , firstname:  "Jonny9" , lastname: "Hallyday9" ,  info: "chanteur qui chante " , style: "rock" , age: 90 ),
+        Artist(photo: "PATH/photo" , firstname:  "Jonny10" , lastname: "Hallyday10" ,  info: "chanteur qui chante " , style: "rock" , age: 90 ),
+        Artist(photo: "PATH/photo" , firstname:  "Jonny11" , lastname: "Hallyday11" ,  info: "chanteur qui chante " , style: "rock" , age: 90 ),
+        Artist(photo: "PATH/photo" , firstname:  "Jonny12" , lastname: "Hallyday12" ,  info: "chanteur qui chante " , style: "rock" , age: 90 )
         
     ]
 }
