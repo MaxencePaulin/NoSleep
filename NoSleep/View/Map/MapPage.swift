@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import MapKit
+
 
 struct MapPage: View {
+
+    
     var body: some View {
         NavigationStack {
             Text("Map")
