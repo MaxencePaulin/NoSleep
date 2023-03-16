@@ -12,6 +12,7 @@ struct MapPage: View {
         NavigationStack {
             Text("Map")
                 .navigationTitle("Carte Intéractive")
+            MapView()
         }
             .tabItem {
                 Image(systemName: "map")
