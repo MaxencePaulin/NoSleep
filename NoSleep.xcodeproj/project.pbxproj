@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5941805729C320CC00889D0D /* SceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5941805629C320CC00889D0D /* SceneModel.swift */; };
+		5941805B29C3214A00889D0D /* ConcertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5941805A29C3214A00889D0D /* ConcertViewModel.swift */; };
 		82252A6F29C3199F003CB1B7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82252A6E29C3199F003CB1B7 /* MapView.swift */; };
 		82252A7229C31B1A003CB1B7 /* coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82252A7129C31B1A003CB1B7 /* coordinator.swift */; };
 		A469D8A129B0E27600083053 /* RowPrestataireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A469D8A029B0E27600083053 /* RowPrestataireView.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5941805629C320CC00889D0D /* SceneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneModel.swift; sourceTree = "<group>"; };
+		5941805A29C3214A00889D0D /* ConcertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertViewModel.swift; sourceTree = "<group>"; };
 		82252A6E29C3199F003CB1B7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		82252A7129C31B1A003CB1B7 /* coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coordinator.swift; sourceTree = "<group>"; };
 		A469D8A029B0E27600083053 /* RowPrestataireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowPrestataireView.swift; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 				A469D8A329B0E9CF00083053 /* Artist.swift */,
 				A469D8A529B0E9F600083053 /* Prestataire.swift */,
 				A469D8A729B0EA1600083053 /* Concert.swift */,
+				5941805629C320CC00889D0D /* SceneModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				A469D8AA29B0F1E600083053 /* ArtistViewModel.swift */,
+				5941805A29C3214A00889D0D /* ConcertViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -229,7 +235,9 @@
 				A469D8A829B0EA1600083053 /* Concert.swift in Sources */,
 				A4C8460629B0BA4F00D5CFC1 /* ArtistsView.swift in Sources */,
 				A4C8460829B0BA8400D5CFC1 /* PlanningView.swift in Sources */,
+				5941805B29C3214A00889D0D /* ConcertViewModel.swift in Sources */,
 				A4C8460A29B0BA9100D5CFC1 /* PrestatairesView.swift in Sources */,
+				5941805729C320CC00889D0D /* SceneModel.swift in Sources */,
 				82252A6F29C3199F003CB1B7 /* MapView.swift in Sources */,
 				A4F2127929B09B52007E75F9 /* ContentView.swift in Sources */,
 				82252A7229C31B1A003CB1B7 /* coordinator.swift in Sources */,
