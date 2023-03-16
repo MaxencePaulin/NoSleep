@@ -1,3 +1,6 @@
+//.overlay{
+//    Capsule().stroke(Color("ambersae"))
+//}
 //
 //  ArtistsView.swift
 //  NoSleep
