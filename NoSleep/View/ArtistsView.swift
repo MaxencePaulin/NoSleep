@@ -15,6 +15,7 @@ struct ArtistsView: View {
     @EnvironmentObject var data: ArtistViewModel
 
     var body: some View {
+        
         NavigationStack {
             List {
                 ForEach(data.artists) {
