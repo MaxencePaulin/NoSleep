@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var showSheet : Bool = false
+    
     var body: some View {
+        
         NavigationStack {
             ZStack {
                 Image("Image_Accueil")
@@ -35,14 +38,19 @@ struct HomeView: View {
                     Spacer()
                     
                     Button(action: {
-                        print("Pressed")
+                        showSheet.toggle()
                     }) {
                         Text("En savoir plus")
                             .foregroundColor(Color("ambersae"))
                     }
+                    .sheet(isPresented: $showSheet) {
+                        InfosView()
+                            .colorScheme(.dark)
+                    }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.vertical, -50)
                     .padding(.horizontal, 25)
+                    
                     Spacer()
                 }
                     
