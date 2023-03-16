@@ -36,5 +36,6 @@ struct ArtistsView: View {
 struct ArtistsView_Previews: PreviewProvider {
     static var previews: some View {
         ArtistsView()
+            .environmentObject(ArtistViewModel())
     }
 }
