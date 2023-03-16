@@ -13,6 +13,7 @@ struct NoSleepApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(ArtistViewModel())
+                .environmentObject(ConcertViewModel())
         }
     }
 }
