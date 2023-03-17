@@ -42,7 +42,7 @@ struct RowArtistView: View {
                 }
             }
             .sheet(isPresented: $showingSheet) {
-                SheetView(artist: artist)
+                ArtisteSheetView(artist: artist)
                     .colorScheme(.dark)
             }
             
@@ -50,7 +50,7 @@ struct RowArtistView: View {
     }
 }
         
-struct SheetView: View {
+struct ArtisteSheetView: View {
     @Environment(\.dismiss) var dismiss
     var artist :Artist
 

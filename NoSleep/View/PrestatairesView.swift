@@ -9,13 +9,13 @@ import SwiftUI
 
 struct PrestatairesView: View {
     
-    @EnvironmentObject var data: ArtistViewModel
+    @EnvironmentObject var data: PrestataireViewModel
     
     var body: some View {
         NavigationStack {
             List {
-                ForEach(data.artists) {
-                    RowPrestataireView(artist: $0)
+                ForEach(data.prestataires) {
+                    RowPrestataireView(presta: $0)
                 }
                 /*équivalent à ForEach(data.artists) { artist in
                     RowPrestataireView(artist: artist)
@@ -33,6 +33,6 @@ struct PrestatairesView: View {
 struct PrestatairesView_Previews: PreviewProvider {
     static var previews: some View {
         PrestatairesView()
-            .environmentObject(ArtistViewModel())
+            .environmentObject(PrestataireViewModel())
     }
 }

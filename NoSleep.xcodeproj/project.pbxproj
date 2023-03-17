@@ -27,6 +27,7 @@
 		A4F2127E29B09B54007E75F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4F2127D29B09B54007E75F9 /* Preview Assets.xcassets */; };
 		DBE3444429C31F480079ADEA /* InfosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3444329C31F480079ADEA /* InfosView.swift */; };
 		FC90C8F929B9D079001814F4 /* RowArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC90C8F829B9D079001814F4 /* RowArtistView.swift */; };
+		FC976F0729C44D35006B39A3 /* PrestataireViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC976F0629C44D35006B39A3 /* PrestataireViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		A4F2127D29B09B54007E75F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DBE3444329C31F480079ADEA /* InfosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosView.swift; sourceTree = "<group>"; };
 		FC90C8F829B9D079001814F4 /* RowArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowArtistView.swift; sourceTree = "<group>"; };
+		FC976F0629C44D35006B39A3 /* PrestataireViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrestataireViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		A469D8A929B0F1CE00083053 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FC976F0629C44D35006B39A3 /* PrestataireViewModel.swift */,
 				A469D8AA29B0F1E600083053 /* ArtistViewModel.swift */,
 				5941805A29C3214A00889D0D /* ConcertViewModel.swift */,
 			);
@@ -243,6 +246,7 @@
 				82252A7229C31B1A003CB1B7 /* coordinator.swift in Sources */,
 				A469D8A629B0E9F600083053 /* Prestataire.swift in Sources */,
 				A4F2127729B09B52007E75F9 /* NoSleepApp.swift in Sources */,
+				FC976F0729C44D35006B39A3 /* PrestataireViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

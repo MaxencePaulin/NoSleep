@@ -21,6 +21,11 @@ struct PlanningView: View {
                     VStack {
                         ForEach(data.concerts) { concert in
                             ConcertCellView(concert: concert)
+                            Divider()
+                                .frame(maxWidth: 250)
+                                .frame(height:  1)
+                                .overlay(Color("ambersae"))
+                                
                         }
                     }
                     .padding(.horizontal)
@@ -45,23 +50,40 @@ struct ConcertCellView: View {
     let concert: Concert
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text(concert.date)
-                .font(.headline)
-            Text(concert.day)
-                .font(.headline)
-            Text(concert.clock)
-                .font(.subheadline)
+        HStack {
             Text(concert.artist)
                 .font(.headline)
-            Text(concert.scene)
+                .frame(maxWidth: 100)
+            Divider()
+                .frame(maxWidth: 50)
+                .frame(height: 100 )
+                .frame(width: 2)
+                .overlay(Color("ambersae"))
+            VStack{
+                Text(concert.date)
+                    .font(.headline)
+                 Text(concert.day)
+                 .font(.headline)
+                Text(concert.clock)
                 .font(.subheadline)
+                 Text(concert.scene)
+                .font(.subheadline)
+                
+            }
+            .padding([ .leading] , 15)
+            //.frame(width: 300, height: 150)
+            //.padding()
+            //     .foregroundColor(Color("ambersae"))
+            //     .cornerRadius(8)
+            //   .shadow(radius: 4)
+            
+            
         }
         .frame(width: 300, height: 150)
         .padding()
-        .background(Color.white.opacity(0.1))
         .foregroundColor(Color("ambersae"))
         .cornerRadius(8)
-        .shadow(radius: 4)
+        //.shadow(color: Color("ambersae"), radius: 4 , x:5 , y:5)
     }
+    
 }
