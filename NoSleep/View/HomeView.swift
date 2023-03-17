@@ -45,7 +45,6 @@ struct HomeView: View {
                     }
                     .sheet(isPresented: $showSheet) {
                         InfosView()
-                            .colorScheme(.dark)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.vertical, -50)
