@@ -14,6 +14,7 @@ struct NoSleepApp: App {
             ContentView()
                 .environmentObject(ArtistViewModel())
                 .environmentObject(ConcertViewModel())
+                .environmentObject(PrestataireViewModel())
         }
     }
 }
