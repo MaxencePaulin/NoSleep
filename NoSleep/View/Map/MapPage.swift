@@ -17,6 +17,7 @@ struct MapPage: View {
             Text("Map")
                 .navigationTitle("Carte Intéractive")
             MapView()
+                .ignoresSafeArea()
         }
             .tabItem {
                 Image(systemName: "map")
