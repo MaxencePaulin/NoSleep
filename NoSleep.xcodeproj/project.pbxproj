@@ -10,7 +10,6 @@
 		5941805729C320CC00889D0D /* SceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5941805629C320CC00889D0D /* SceneModel.swift */; };
 		5941805B29C3214A00889D0D /* ConcertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5941805A29C3214A00889D0D /* ConcertViewModel.swift */; };
 		82252A6F29C3199F003CB1B7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82252A6E29C3199F003CB1B7 /* MapView.swift */; };
-		82252A7229C31B1A003CB1B7 /* coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82252A7129C31B1A003CB1B7 /* coordinator.swift */; };
 		A469D8A129B0E27600083053 /* RowPrestataireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A469D8A029B0E27600083053 /* RowPrestataireView.swift */; };
 		A469D8A429B0E9CF00083053 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A469D8A329B0E9CF00083053 /* Artist.swift */; };
 		A469D8A629B0E9F600083053 /* Prestataire.swift in Sources */ = {isa = PBXBuildFile; fileRef = A469D8A529B0E9F600083053 /* Prestataire.swift */; };
@@ -34,7 +33,6 @@
 		5941805629C320CC00889D0D /* SceneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneModel.swift; sourceTree = "<group>"; };
 		5941805A29C3214A00889D0D /* ConcertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcertViewModel.swift; sourceTree = "<group>"; };
 		82252A6E29C3199F003CB1B7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		82252A7129C31B1A003CB1B7 /* coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coordinator.swift; sourceTree = "<group>"; };
 		A469D8A029B0E27600083053 /* RowPrestataireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowPrestataireView.swift; sourceTree = "<group>"; };
 		A469D8A329B0E9CF00083053 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		A469D8A529B0E9F600083053 /* Prestataire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prestataire.swift; sourceTree = "<group>"; };
@@ -69,19 +67,10 @@
 		82252A6D29C3193D003CB1B7 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				82252A7029C31AEC003CB1B7 /* Coordinators */,
 				A4C8460329B0BA1B00D5CFC1 /* MapPage.swift */,
 				82252A6E29C3199F003CB1B7 /* MapView.swift */,
 			);
 			path = Map;
-			sourceTree = "<group>";
-		};
-		82252A7029C31AEC003CB1B7 /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-				82252A7129C31B1A003CB1B7 /* coordinator.swift */,
-			);
-			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		A469D8A229B0E9B600083053 /* Model */ = {
@@ -243,7 +232,6 @@
 				5941805729C320CC00889D0D /* SceneModel.swift in Sources */,
 				82252A6F29C3199F003CB1B7 /* MapView.swift in Sources */,
 				A4F2127929B09B52007E75F9 /* ContentView.swift in Sources */,
-				82252A7229C31B1A003CB1B7 /* coordinator.swift in Sources */,
 				A469D8A629B0E9F600083053 /* Prestataire.swift in Sources */,
 				A4F2127729B09B52007E75F9 /* NoSleepApp.swift in Sources */,
 				FC976F0729C44D35006B39A3 /* PrestataireViewModel.swift in Sources */,
