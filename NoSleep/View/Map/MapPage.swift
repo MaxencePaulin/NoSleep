@@ -14,10 +14,8 @@ struct MapPage: View {
     
     var body: some View {
         NavigationStack {
-            Text("Map")
-                .navigationTitle("Carte Intéractive")
             MapView()
-                .ignoresSafeArea()
+                .navigationTitle("Carte Intéractive")
         }
             .tabItem {
                 Image(systemName: "map")

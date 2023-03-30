@@ -12,6 +12,8 @@ import MapKit
 struct MapView: UIViewControllerRepresentable {
     
     class ViewController: UIViewController, MKMapViewDelegate {
+        
+        @State var selectedAnnotation: MKAnnotation?
 
         private var MapViewObject: MKMapView = {
             let map = MKMapView()
@@ -23,6 +25,7 @@ struct MapView: UIViewControllerRepresentable {
             view.addSubview(MapViewObject)
             setMapConstraints()
             configureMap()
+            MapViewObject.delegate = self
         }
         
         private func setMapConstraints() {
@@ -70,10 +73,25 @@ struct MapView: UIViewControllerRepresentable {
                           "Scene 3",
                           "Scene 4",
                           "Scene 5"]
+            let subtitles = ["Prestataire de restauration",
+                          "Prestataire de medecine",
+                          "Prestataire de ventes de goodies",
+                          "Prestataire de boisson",
+                          "Prestataire test",
+                          "Prestataire test2",
+                          "Prestataire test3",
+                          "Prestataire test4",
+                          "Prestataire test5",
+                          "Scene extérieur",
+                          "Scene intérieur",
+                          "Scene hybride",
+                          "Grande scene",
+                          "Petite scene"]
             for i in coords.indices {
                 let annotation = MKPointAnnotation()
                 annotation.coordinate = coords[i]
                 annotation.title = titles[i]
+                annotation.subtitle = subtitles[i]
                 MapViewObject.addAnnotation(annotation)
             }
         }
@@ -91,6 +109,39 @@ struct MapView: UIViewControllerRepresentable {
             }
             return annotationView
         }
+        
+
+        func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+            guard !(annotation is MKUserLocation) else { return nil }
+            let identifier = "Pin"
+            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView
+            if annotationView == nil {
+                annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                annotationView?.canShowCallout = true
+                let button = UIButton(type: .infoDark)
+                annotationView?.rightCalloutAccessoryView = button
+            } else {
+                annotationView?.annotation = annotation
+            }
+            return annotationView
+        }
+        
+        func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+            if control == view.rightCalloutAccessoryView {
+                if let annotation = view.annotation {
+                    let alertController = UIAlertController(title: annotation.title ?? "", message: annotation.subtitle ?? "", preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                    alertController.addAction(okAction)
+                    present(alertController, animated: true, completion: nil)
+
+                }
+            }
+        }
+
+        
+
+
+
     }
 
     
@@ -106,6 +157,8 @@ struct MapView: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: ViewController, context: Context) {
         // Updates the state of the specified view controller with new information from SwiftUI.
     }
+    
+    
 }
 
 
