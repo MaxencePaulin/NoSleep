@@ -82,8 +82,8 @@ struct MapView: UIViewControllerRepresentable {
                           "Prestataire test3",
                           "Prestataire test4",
                           "Prestataire test5",
-                          "Scene extérieur",
-                          "Scene intérieur",
+                          "Scene extérieure",
+                          "Scene intérieure",
                           "Scene hybride",
                           "Grande scene",
                           "Petite scene"]
